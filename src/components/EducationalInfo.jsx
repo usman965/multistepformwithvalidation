@@ -7,7 +7,7 @@ import { changeEducationalInfo } from '../redux/features/Form';
 
 const EducationalInfo = (props) => {
   const validationSchema = Yup.object({
-    // instituteName: Yup.string().required().min(3)
+    instituteName: Yup.string().required().min(3)
 });
   const dispatch = useDispatch();
   const educationInfo = useSelector(state => state.form.educationalInfo);

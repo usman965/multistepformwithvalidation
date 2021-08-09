@@ -7,13 +7,11 @@ import * as Yup from "yup"
 const PersonalInfo = (props) => {
 
     const validationSchema = Yup.object({
-        // name: Yup.string().required().min(3).
-        //     max(15),
-        // phone: Yup.number().required(),
-        // email: Yup.string().email().required()
+        name: Yup.string().required().min(3).
+            max(15),
+        phone: Yup.number().required(),
+        email: Yup.string().email().required()
     });
-
-
 
 
     const dispatch = useDispatch();
